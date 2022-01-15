@@ -1,0 +1,106 @@
+@import '../_variables.sass';
+.main {
+    background-color: $color-base-primary-blue-dark;
+    color: white;
+    display: grid;
+    grid-gap: 16px;
+    padding: 8px;
+    .balance {
+        font-size: $size-x-large;
+        .balanceLabel{
+            font-size: $size-small;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .budget{
+        color: $color-base-primary-blue-dark;
+        .budgetLabel {
+            font-weight: bold;
+            .bugetCurrentData {
+                font-weight: 100;
+            }
+        }
+        .budgetSpan {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .transaction{
+        color: $color-base-primary-blue-dark;
+    }
+    .savings {
+        .savingMain {
+            display: flex;
+            justify-content: space-between;
+            width: auto;
+            align-items: center;
+        }
+        svg{
+            color: $color-base-secondary-white;
+            width: 20px;
+        }
+        squid-container {
+            div {
+                width: fit-content;
+            }
+        }
+    }
+    .CTA {
+        display: flex;
+        justify-content: space-around;
+        div {
+            width: min-content;
+            text-align: center;
+        }
+        svg {
+            margin-top: 9px;
+        }
+    }
+    .transactionTitle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+    }
+    .transactionRow {
+        display: grid;
+        grid-template-columns: 2fr 5fr 5fr;
+        padding: 16px 0 ;
+        .icon {
+            border-radius: 50%;
+            background-color: olive;
+        }
+        .transactionAmount{
+            text-align: right;
+        }
+        .transactionName{
+            padding-left: 4px;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            
+        }
+    }
+    .promotion{
+        color: black;
+        width: 350px;
+        .promotionSpan{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            div{
+                width: 50%;
+            }
+            .promotionButton {
+                width: min-content;
+            }
+        }
+    }
+}

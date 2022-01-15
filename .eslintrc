@@ -1,0 +1,46 @@
+{
+    "plugins": [
+        "prettier"
+    ],
+    "parser": "",
+    "env": {
+        "es6": true,
+        "jasmine": true,
+        "browser": true,
+        "node": true
+    },
+    "extends": ["eslint:recommended"],
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 2020,
+        "allowImportExportEverywhere": true
+    },
+    "globals": {
+        "Rx": true,
+        "tempHtml": true
+    },
+    "rules": {
+        "indent": [
+            2,
+            2,
+            {"SwitchCase":1}
+        ],
+        "linebreak-style": [
+            2,
+            "unix"
+        ],
+        "quotes": [
+            2,
+            "single"
+        ],
+        "semi": [
+            2,
+            "always"
+        ],
+        "no-console": [
+            0
+        ],
+        "multiline-ternary":"off",
+        "prettier/prettier": "error"
+    }
+}
